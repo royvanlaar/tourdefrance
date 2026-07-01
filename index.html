@@ -1,5 +1,12 @@
 
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Tour de France 2026 — Tactisch Dashboard</title>
 <style>
+  html, body { margin: 0; padding: 0; background: #0f1117; }
   :root {
     --tdf-yellow: #F5C518;
     --tdf-yellow-dim: rgba(245,197,24,0.12);
@@ -549,7 +556,7 @@
   .tdf-verdict-body { font-size: 14px; color: rgba(240,240,240,0.8); line-height: 1.7; }
 
   /* ===== RESPONSIVE / MOBIEL ===== */
-  @media (max-width: 920px){
+  @media (max-width: 720px){
     .tdf-wrap{
       flex-direction: column;
       height: 100%;
@@ -590,7 +597,8 @@
     .tdf-fav div{ margin: 8px 0; }
   }
 </style>
-
+</head>
+<body>
 
 <div class="tdf-wrap" id="app">
   <div class="tdf-sidebar">
@@ -893,3 +901,5 @@ document.getElementById('tdf-countdown').textContent=getCountdown();
 setInterval(()=>{document.getElementById('tdf-countdown').textContent=getCountdown();},60000);
 selectStage(getTodayStage().n);
 </script>
+</body>
+</html>
